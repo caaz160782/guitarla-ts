@@ -1,6 +1,5 @@
 
 
-/* eslint-disable react/prop-types */
 
 
 const Header = ({cart,removeItem,increaseQuantity, reduceQuantity,delCart,isEmpty,cartTotal}) => {
