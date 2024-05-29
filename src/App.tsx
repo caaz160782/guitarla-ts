@@ -17,9 +17,6 @@ function App(){
     isEmpty,
     cartTotal
   }=useCart()
- 
-  
-
   
   
     return (<>

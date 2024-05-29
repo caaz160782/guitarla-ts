@@ -1,10 +1,18 @@
 
+import type { CartItem,Guitar } from "../types"
 
+type HeadeProps ={
+    cart: CartItem[]
+    removeItem      : (id: Guitar['id'])=> void
+    increaseQuantity: (id: Guitar['id'])=> void
+    reduceQuantity  : (id: Guitar['id'])=> void
+    delCart         : () => void
+    isEmpty         : boolean
+    cartTotal       : number
+}
 
-
-const Header = ({cart,removeItem,increaseQuantity, reduceQuantity,delCart,isEmpty,cartTotal}) => {
-    //state derivado
-   
+const Header = ({cart, removeItem,increaseQuantity, reduceQuantity,delCart,isEmpty,cartTotal}:HeadeProps) => {
+    //state derivado   
   return (
     <header className="py-5 header">
     <div className="container-xl">
